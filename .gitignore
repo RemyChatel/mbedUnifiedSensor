@@ -30,5 +30,8 @@
 *.exe
 *.out
 *.app
+
 BUILD
 mbed-os
+mbed_app.json
+mbed-os.lib

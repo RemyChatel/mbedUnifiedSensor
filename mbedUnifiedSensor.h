@@ -17,8 +17,8 @@
 /* Update by K. Townsend (Adafruit Industries) for lighter typedefs, and
  * extended sensor support to include color, voltage and current */
  
-#ifndef _ADAFRUIT_SENSOR_H
-#define _ADAFRUIT_SENSOR_H
+#ifndef _MBED_SENSOR_H
+#define _MBED_SENSOR_H
 #include "mbed.h"
 
 /* Intentionally modeled after sensors.h in the Android API:
@@ -130,11 +130,11 @@ typedef struct
     int32_t  min_delay;                       /**< min delay in microseconds between events. zero = not a constant rate */
 } sensor_t;
 
-class Adafruit_Sensor {
+class mbedSensor {
  public:
   // Constructor(s)
-  Adafruit_Sensor() {}
-  virtual ~Adafruit_Sensor() {}
+  mbedSensor() {}
+  virtual ~mbedSensor() {}
 
   // These must be defined by the subclass
   virtual void enableAutoRange(bool enabled) { (void)enabled; /* suppress unused warning */ };
